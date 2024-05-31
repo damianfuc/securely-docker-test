@@ -16,7 +16,6 @@ jobs:
         - docker tag hello-world-python damian0519/python-hello-world
         - docker push damian0519/python-hello-world
         - export COSIGN_PASSWORD="${COS_PASSWORD}"
-        - cosign sign --key cosign.key damian0519/python-hello-world
         - yes | cosign sign --key cosign.key damian0519/python-hello-world
         - cosign verify --key cosign.pub damian0519/python-hello-world
         - docker logout
