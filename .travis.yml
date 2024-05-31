@@ -22,4 +22,4 @@ jobs:
         - docker logout
  
 keys:
-  - Key
+  - KEY
